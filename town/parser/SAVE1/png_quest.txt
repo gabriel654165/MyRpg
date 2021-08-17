@@ -1,0 +1,154 @@
+/png_quest:
+25
+-200:-2000:1:0:11:6:1:9:5
+/0:
+4
+J'EN AI MARRE DES DRAGONS !
+DONNE MOI 5 POTIONS ORANGE ET
+JE TE DONNE 100 PIECES D'OR.
+CES ENFLURES ONT TUES MA FAMILLE !
+/responses:
+D'accord
+Chech
+/end
+/1:
+2
+ALORS C'EST BON ???
+TU LES AS ???
+/responses:
+Oui
+ptdr non
+/end
+/2:
+2
+Merci beaucoup, je vais
+beaucoup mieux ^^
+/end
+/png_quest:
+25
+1500:-2000:0:0:12:6:1:8:5
+/0:
+4
+Salutation jeune homme,
+as-tu des potions bleue ?
+J'en ai besoin pour des
+experiences.
+/responses:
+D'accord.
+Pas envie.
+/end
+/1:
+2
+Les as-tu sur toi ?
+C'est assez urgent.
+/responses:
+Oui.
+Pas du tout.
+/end
+/2:
+2
+Merci beaucoup.
+Tu es très gentil.
+/end
+/png_quest:
+25
+2500:-2700:1:0:13:6:1:9:8
+/0:
+4
+Savais-tu que le korronavyrus
+vient des chauves-souris ?
+Peux-tu me ramener des potions
+orange ? C'est pour une experience.
+/responses:
+D'accord.
+Jtouche pas a ca.
+/end
+/1:
+2
+Les as-tu sur toi ?
+parce que la menace arrive...
+/responses:
+Oui.
+Pas du tout.
+/end
+/2:
+2
+Merci beaucoup.
+Et applaudit a 20h !
+/end
+/png_quest:
+25
+-1400:-2700:0:0:14:5:1:6:10
+/0:
+4
+J'ai grave envie de me faire une
+petite soupe de chauve-souris,
+t'aurais pas 10 pieces d'or
+sous la main ?
+/responses:
+Je vais t'en chercher.
+Sale malade.
+/end
+/1:
+2
+T'as l'argent ? j'ai trop
+faim !!!
+/responses:
+Oui.
+Pas encore.
+/end
+/2:
+2
+Merci ! Comme si ma soupe va detruire
+le monde.
+/end
+/png_quest:
+8
+900:-2000:0:0:-1:2:1:1:10
+/0:
+3
+Bonjour aventurier !
+J'espere que notre humble
+village vous plait !
+/end
+/png_quest:
+8
+900:-4000:1:0:-1:2:1:1:10
+/0:
+3
+Bah alors petit garcon ?
+Laisse moi deviner...
+On a vole votre friandise ?
+/end
+/png_quest:
+31
+1000:300:0:1:21:2:1:1:0
+/0:
+10
+Bonjour jeune hero,
+Je vais t'aider a prendre en main
+tes nouvelles capacitees...
+Tu as acces a l'inventaire avec la touche I
+et le menu avec la touche ECHAP
+Pour courir utilise la touche SHIFT.
+Ensuite pour attaquer, utilise la touche W.
+Tu vas devoir t'entrainer dur pour rester en vie.
+Maintenant descend pour suivre ton apprentisage
+et combattre tes deux premiers monstres...
+/responses:
+J'accepte
+Je vais me debrouiller merci
+/end
+/1:
+2
+As tu reussi
+ta mission ?
+/responses:
+oui
+non
+/end
+/2:
+2
+Bien joue et bonne chance
+pour ton aventure !
+/end

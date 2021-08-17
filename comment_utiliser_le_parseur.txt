@@ -1,0 +1,179 @@
+UTILISATION DU PARSEUR:
+regles :
+       1 -> nom de l'option
+       2 -> nombre de ligne qu'il y aura apres l'option
+       3 -> valeurs de ce qui doit etre mis dans l'option
+
+       exemple :
+               /map:
+                    1
+                        10:10:100:100:0
+
+
+options :
+        1 -> /map: (sert a créer un terrain)
+             valeurs a rentrer :
+             x_minimum = ou faire commencer le terrain
+             x_maximum = incrémentation de x_maximum block par rapport a x_minimum
+             y_minimum = ou faire commencer le terrain
+             y_maximum = incrémentation de y_maximum block par rapport a y_minimum
+             texture = numero de la texture du tableau tab_tileset (CF: town.h)
+
+        2 -> /disp_obj: (sert a créer une foret / des textures alignées)
+             valeurs a rentrer :
+             les memes que pour /map sauf la texture qui est cette fois dans
+             tab_txt_nature (CF: town.h)
+             collision = 1 si oui 0 si non
+
+        3 -> /house: (/rock, /wooden, /stuff, /nature, /gate_open) (sert a créer un objet)
+             valeurs a rentrer :
+             x = position en x
+             y = position en y
+             texture = numero de la texture du tableau tab_txt (CF: town.h)
+             L>/rock = tab_txt_rock
+             L>/wooden = tab_text_wooden
+             L>/stuff = tab_txt_stuff
+             L>/nature = tab_txt_nature
+             collision = 1->collision / 0->pas collision
+
+        4 -> /gate_open: (animation de l'entrée principale vu de devant)
+             valeurs a rentrer :
+             x = position en x
+             y = position en y
+             texture = 0 (toujours)
+
+        5 -> /monster: (animation des monstres)
+             valeurs à rentrer :
+             zone_x = x minimum de la zone de spawn
+             zone_x_max = x max de la zone de spawn
+             zone_y = y minimum de la zone de spawn
+             zone_y_max = y max de la zone de spawn
+             rect.left = left du sfIntRect pour l'animation
+             rect.top = top du sfIntRect pour l'animation
+             rect.width = width du sfIntRect pour l'animation
+             rect.height = height du sfIntRect pour l'animation
+             offset_rect_left = de combien on déplace le rect pour faire l'animation
+             max_offset_rect_left = valeur de départ du deplacement du rect
+             min_offset_rect_left = jusqu'a quand on déplace le rect
+             texture = numero de la texture de text_monster (CF: town.h)
+             x = coor du monstre (mettre a 0)
+             y = coor du monstre (mettre a 0)
+             etat_du_monstre = mort ou vivant (mettre a 0)
+             time = mettre a 0.2
+             direction_time = mettre a 0
+             direction = direction de base (mettre a 1, 2, 3 ou 4 au choix)
+             aggro = range de l'aggro du monstre (ex : 100 = petite range / 1000 grande range)
+
+             6 -> /chest:
+             coor en x
+             coor en y
+             numero texture
+             collision 1 pour collision 0 sans collision
+             nombre d'objet que contient le coffre
+             numero de la texture que donne le coffre
+             1 pour mettre a gauche dans l'inventaire, 2 pour mettre a droite
+             status -> mettre a 0
+
+____________________________________________________________________________________________
+
+         6 -> /!\ OPTION SPÉCIAL (CF: png_quest.txt pour les quetes ds la ville
+         / world_quest.txt pour les quetes dans le monde ouvert)
+___________________________________________________________________________________________
+
+         EXPLICATION :
+              3 étapes dans un dialogue qui donne une quete:
+              1 -> tu parles pour la premiere fois avec le png et il te propose une quete
+                |_> tu accepte ou non la quete 
+              2 -> le png te demande si tu a réussi la quete
+                |_> tu dit oui ou non (ou ce que tu veut hein c'est toi qui écrit le dialogue)
+              3 -> tu as rempli la quete (a chaque fois que t'ira voir ce png il te dira la meme chose)
+            IMPORTANT : tu peut t'arreter a la premiere étape et faire un monologue au png
+            IMPORTANT : à la fin de chacunes des étapes il faut mettre un /end
+
+            
+            /png_quest:
+                inserer le nombre de ligne qui suit + 1 -> +1 sinon ca marche pas
+                valeurs à rentrer :
+                x_pos = position en x du png qui donne la quete
+                y_pos = position en y du png qui donne la quete
+                texture = numero de la texture (tableau pas encore créer)
+                etat_du_dialogue = mettre a 0
+                numero de la quete = numero attribué(voir quête plus bas)
+                numero de texture de la récompense = inventory_tab (CF: town.h)
+                numero de la partie de l'inventaire = 1 pour la gauche, 2 pour la droite
+                numero de l'objet a ramener = inventory_tab (CF: town.h)
+                nombre d'objet a ramener
+                
+            1ere étape -> /0:
+                       inserer le nombre de ligne du dialogue
+                       "blablalba"
+            Si tu veut inserer une reponse -> /responses:
+                       "reponse positive" -> si réponse positive te rajoute la quete
+                       "reponse negative"
+            fin de l'étape -> /end
+
+            2eme étape -> /1:
+                       exactement la meme que pour la premiere étape sauf que la réponse
+                       que tu va donner va permettre de valider la quete
+
+            3eme étape -> /2:
+                       toujours pareil sauf que tu ne peut pas mettre de reponses
+
+EXEMPLE PARCE QUE C'EST PAS TRES CLAIR :
+
+/png_quest:
+    26
+      500:-2000:10:0:1:1:1:1:10
+           /0:
+               5
+                   Bonjour voyageur,
+                   des monstres sont apparues recemment
+                   peut tu enqueter sur ce phenomene?
+                   Il me faudrait 10 ailes de
+                   dragons...
+           /responses:
+                   J'accepte
+                   J'ai pas le temps
+           /end
+           /1:
+                2
+                   As tu rempli la mission
+                   que je t'ai demandee?
+           /responses:
+                   oui
+                   non
+           /end
+           /2:
+                2
+                   merci pour m'avoir rendu
+                   ce service :=)
+           /end
+
+
+___________________________________________________________________________________
+
+                                        QUÊTES
+__________________________________________________________________________________
+
+    Toutes les quêtes se mettent dans le parser quest.txt
+
+    1ere étape : mettre le numéro de la quête (ce sera le numéro que vous mettrez
+    en dernier parametre de png_quest)
+
+    2eme étape : mettre state:0
+
+    3eme étape : titre de la quête
+
+    4eme étape : description de la quête
+
+    5eme étape : mettre /end
+    
+    exemple :
+                1
+                state:0
+                Reunir 10 ailes de dragon
+                Un villageois vous a demandé
+                de lui rammener 10 ailes de dragon
+                afin de définir quel mal c'est
+                abbatu sur le pays.
+                /end

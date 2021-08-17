@@ -1,0 +1,186 @@
+/png_quest:
+29
+700:-800:1:0:1:8:1:8:1
+/0:
+7
+Une base ennemie est situee non loin d'ici,
+les monstres qui y vivent viennent regulierement
+me voler. Si seulement un jeune heros menant
+une quete sacree
+pouvait m'aider a m en debarasser...
+Ramene moi une potion bleu et je saurai
+que tu les as tue.
+/responses:
+Je suis un heros !
+Je n'en connais pas...
+/end
+/1:
+2
+Es tu vraiment le heros
+que tu pretends etre ?
+/responses:
+J'ai battu les monstres.
+Je n'ai pas les potions.
+/end
+/2:
+3
+Merci beaucoup pour ce grand service heros,
+j'espere que tu viendras a bout de ta quete.
+Prend donc aussi cette potion tu l'as bien merite !
+/end
+/png_quest:
+25
+-500:-4400:1:0:2:9:1:6:5
+/0:
+4
+BONJOUR,
+Je suis le marchand de la ville,
+parle moi pour acheter une potion
+orange contre 2 pieces.
+/responses:
+Ca marche.
+Ca ne m'interesse pas
+/end
+/1:
+2
+Veux tu echanger une piece d or
+contre une potion ?
+/responses:
+Oui.
+NON.
+/end
+/2:
+2
+AHAHAHAA
+JE T AI BIEN EU
+/end
+/png_quest:
+24
+-400:-7350:1:0:3:9:1:10:1
+/0:
+3
+Derriere cette porte se trouve le chateau
+du demon, tu dois trouver la cle de celle-ci
+pour pouvoir y penetrer. Sauve vite le monde !
+/responses:
+Tres bien.
+J ai peur.
+/end
+/1:
+2
+As-tu trouve la cle menant au chateau
+jeune heros ?
+/responses:
+Oui.
+non.
+/end
+/2:
+2
+Prend ces potions orange et
+va donc sauver notre monde !
+/end
+/png_quest:
+27
+3800:-7380:1:0:4:4:2:6:25
+/0:
+6
+Bonjour jeune hero, ma femme et moi
+vivons difficilement depuis
+l apparition du demon. Nous sommes
+une famille de forgerons, je te propose
+de te vendre un casque de tres bonne qualite
+contre 25 piece d or.
+/responses:
+Ca m interesse.
+Non merci.
+/end
+/1:
+2
+As-tu les 25 pieces et veux tu acheter
+le casque ?
+/responses:
+Oui.
+non.
+/end
+/2:
+2
+Prenc ce casque et sauve Nous
+de ce malheur !
+/end
+/png_quest:
+25
+3600:-210:0:0:5:3:2:9:2
+/0:
+3
+Salut, J ai besoin de 2 potions oranges.
+Ramene les moi et je te les echange 
+contre une belle armure.
+/responses:
+Je vais revenir.
+Non merci.
+/end
+/1:
+2
+Tu as trouve les 2 potions
+oranges ?
+/responses:
+Oui.
+non.
+/end
+/2:
+3
+Tu as bien merite cette armure !
+T es un bon gars essaye de pas 
+mourir au combat !
+/end
+/png_quest:
+25
+-400:-2200:0:0:6:8:1:6:5
+/0:
+4
+Salut a vous voyageur, je me ferai bien
+une tarte aux pommes mais n en ai
+malheuresement pas. Si tu m apportes
+5 pommes, je te donne une potion bleue.
+/responses:
+Je vais revenir.
+Ca ne m'interesse pas.
+/end
+/1:
+2
+As tu apporte mes belles pommes ?
+j'ai si faim.
+/responses:
+Tiens.
+Non.
+/end
+/2:
+2
+MERCI JE VAIS POUVOIR ME FAIRE
+UNE BELLE TARTE.
+/end
+/png_quest:
+24
+-4400:-7400:0:0:7:10:1:6:100
+/0:
+3
+En cueillant des fruits pret de chez moi,
+j ai trouve une mysterieuse cle. Je te 
+l echange seulement contre 100 pieces d or.
+/responses:
+Bien.
+Jamais.
+/end
+/1:
+2
+As-tu mes 100 pieces d or ?
+Tu n'auras pas la cle sans ca.
+/responses:
+Oui.
+non.
+/end
+/2:
+2
+Cadeau.
+Mes precieuses pieces !
+/end

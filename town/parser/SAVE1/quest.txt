@@ -1,0 +1,83 @@
+1
+state:1
+La naissance d'un heros
+Un vieillard veux que tu tues
+les monstres pret de chez lui
+ramene lui une potion bleu
+pour lui prouver que tu les as tue.
+/end
+2
+state:0
+Marchandage
+Parle au marchand de la ville
+pour lui échanger une piece d or
+contre 2 potions orange.
+/end
+3
+state:0
+La cle du succes
+Trouve la cle qui mene vers le chateau
+pour affronter le demon et ramene la
+a l homme devant la porte.
+/end
+4
+state:0
+Le forgeron
+Ramene 25 piece d or au forgeron
+pour qu il te donne un casque.
+/end
+5
+state:0
+L'armure
+Ramene 2 potions et echange les
+contre une armure.
+/end
+6
+state:0
+La tarte aux pommes
+Ramene 5 pommes a la femme
+a l entree de la ville pour
+obtenir une potion bleue.
+/end
+7
+state:0
+Proche du but
+Une dame dit avoir trouve la clee
+et veux te l'echanger contre 100 pieces
+d or.
+/end
+11
+state:0
+La vengeance d'un homme
+Un homme veut se venger
+des dragons qui lui a tue sa
+famille. Donnez 5 potions orange
+pour le soigner.
+/end
+12
+state:0
+La potion de la sorciere
+Une femme veut de la potion
+bleue. Donnez-lui en 5.
+/end
+13
+state:0
+Le danger venant de Shin
+Un homme veut eradiquer le
+korronavyrus et il veut que
+vous ramenez 8 potions orange.
+/end
+14
+state:0
+Le debut de la menace
+Un homme veut se faire une
+soupe de chauve-souris.
+ramenez 10 pieces d'or a
+cette homme.
+/end
+21
+state:1
+Prise en main
+Apprend a utiliser
+les commandes de bases
+/end

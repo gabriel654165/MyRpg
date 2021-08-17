@@ -1,0 +1,60 @@
+/*
+** EPITECH PROJECT, 2020
+** include
+** File description:
+** yes
+*/
+
+#include <math.h>
+#include <SFML/Audio.h>
+#include <SFML/Window.h>
+#include <SFML/Audio/Export.h>
+#include <SFML/Audio/SoundStatus.h>
+#include <SFML/Audio/Types.h>
+#include <SFML/Graphics/Types.h>
+#include <SFML/Graphics/Transform.h>
+#include <SFML/Graphics/Export.h>
+#include <SFML/Graphics/Color.h>
+#include <SFML/Graphics/Rect.h>
+#include <SFML/Graphics/Types.h>
+#include <SFML/Graphics/PrimitiveType.h>
+#include <SFML/Graphics/Shape.h>
+#include <SFML/Graphics/Sprite.h>
+#include <SFML/Graphics/CircleShape.h>
+#include <SFML/Graphics/Color.h>
+#include <SFML/Graphics/ConvexShape.h>
+#include <SFML/Graphics/Font.h>
+#include <SFML/Graphics/FontInfo.h>
+#include <SFML/Graphics/Glyph.h>
+#include <SFML/Graphics/Image.h>
+#include <SFML/Graphics/RectangleShape.h>
+#include <SFML/Graphics/RenderStates.h>
+#include <SFML/Graphics/RenderTexture.h>
+#include <SFML/Graphics/RenderWindow.h>
+#include <SFML/Graphics/Shader.h>
+#include <SFML/Graphics/Text.h>
+#include <SFML/Graphics/Texture.h>
+#include <SFML/Graphics/Transformable.h>
+#include <SFML/Graphics/RenderStates.h>
+#include <SFML/Graphics/Vertex.h>
+#include <SFML/Graphics/VertexArray.h>
+#include <SFML/Graphics/VertexBuffer.h>
+#include <SFML/Graphics/View.h>
+#include <SFML/Window/Event.h>
+#include <SFML/Window/VideoMode.h>
+#include <SFML/Window/WindowHandle.h>
+#include <SFML/Window/Window.h>
+#include <SFML/System/Vector2.h>
+#include <SFML/Window/Mouse.h>
+#include <stddef.h>
+#include <SFML/Graphics.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <SFML/Window/Export.h>
+#include <SFML/Window/Joystick.h>
+#include <SFML/Window/Keyboard.h>
+#include <SFML/Window/Mouse.h>
+#include <SFML/Window/Sensor.h>
+#include <SFML/Graphics/Export.h>
+#include <SFML/Graphics/Rect.h>
+#include <SFML/Graphics/BlendMode.h>
