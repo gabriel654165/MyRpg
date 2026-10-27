@@ -8,7 +8,6 @@
 #ifndef MY_H_
 #define MY_H_
 
-#include <ncurses.h>
 #include <stddef.h>
 #include <unistd.h>
 #include <stdio.h>
