@@ -6,7 +6,7 @@
 ##
 
 #flag#
-CFLAGS = -Wall -Wextra -Wshadow -finline-functions
+CFLAGS = -Wall -Wextra -Wshadow -finline-functions -fcommon
 
 CPPFLAGS = -iquote $(IDIR)
 
@@ -115,7 +115,7 @@ all:	$(NAME)
 
 $(NAME):	$(OBJ)
 	make -C lib/my
-	$(CC) $(CSFML) -o $(NAME) $(OBJ) $(LIBFLAGS) $(LDFLAGS)
+	$(CC) -o $(NAME) $(OBJ) $(LIBFLAGS) $(CSFML) $(LDFLAGS)
 
 debug: CFLAGS += $(DBGFLAGS)
 debug: $(NAME)
